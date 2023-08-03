@@ -8,4 +8,37 @@ insert lots of time. Arrays have fast reads and slow inserts, and Linked Lists h
 linked list only have a slow read if each elements is stored in random spaces, in the case you’re reading every element 
 in the list it will do well on reads
 
-2.2
+2.2 - Suppose you’re building an app for restaurants to take customer
+orders. Your app needs to store a list of orders. Servers keep adding
+orders to this list, and chefs take orders off the list and make them.
+It’s an order queue: servers add orders to the back of the queue, and
+the chef takes the first order off the queue and cooks it.
+R: Linked Lists, because the advantage of lists being better to add itens, and the commands comes with an order that can 
+use the sequencial access of lists  
+
+2.3 - Let’s run a thought experiment. Suppose Facebook keeps a list of
+usernames. When someone tries to log in to Facebook, a search is
+done for their username. If their name is in the list of usernames,
+they can log in. People log in to Facebook pretty often, so there are
+a lot of searches through this list of usernames. Suppose Facebook
+uses binary search to search the list. Binary search needs random
+access—you need to be able to get to the middle of the list of
+usernames instantly. Knowing this, would you implement the list
+as an array or a linked list?
+R: In this cenario we can only use arrays for necessity to random access the elements in the list and implement Binarys
+search
+
+2.4 - People sign up for Facebook pretty often, too. Suppose you decided
+to use an array to store the list of users. What are the downsides
+of an array for inserts? In particular, suppose you’re using binary
+search to search for logins. What happens when you add new users
+to an array?
+R: The downsides are the arrays aren't good for insertions, and using them can slow down the process
+
+2.5 - Compare this hybrid data structure to arrays and linked lists. Is it
+slower or faster than each for searching and inserting? You don’t
+have to give Big O run times, just whether the new data structure
+would be faster or slower. 
+R: it will be faster, because you have the random acess of array and can go to any letter you need and have the benefits of
+a linked lists that can add and remove itens quickly. Correction: in terms of searching, it will be slower than and array but
+faster than a linked list, and in terms of inserting, it will be faster than arrays and the same amount of time as linked list
