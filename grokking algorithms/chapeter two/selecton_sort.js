@@ -23,8 +23,8 @@ function selectionSort(array) {
 
     for (let i = 0; i < array.length; i++) {
         let smallest_index = finSmallestIndex(copyArray)
-        //sortedArray.push(copyArray.splice(smallest_index,1)[0])
-        sortedArray.push(smallest_index[i])
+        sortedArray.push(copyArray.splice(smallest_index,1)[0])
+        //sortedArray.push(smallest_index[i])
     }
 
     return sortedArray;
